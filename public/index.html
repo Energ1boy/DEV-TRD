@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Dev Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Simple Dev Blog</h1>
+        <div id="auth">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" id="regUsername" placeholder="Username" required>
+                <input type="password" id="regPassword" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="newPost" style="display:none;">
+            <h2>New Post</h2>
+            <form id="postForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <textarea id="content" placeholder="Content" required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </div>
+        <div id="editPost" style="display:none;">
+            <h2>Edit Post</h2>
+            <form id="editPostForm">
+                <input type="hidden" id="editPostId">
+                <input type="text" id="editTitle" placeholder="Title" required>
+                <textarea id="editContent" placeholder="Content" required></textarea>
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+        <div id="posts"></div> <!-- Add this line -->
+        <div id="postDetail" style="display:none;">
+            <h2 id="postTitle"></h2>
+            <p id="postContent"></p>
+            <small id="postAuthor"></small>
+            <div id="commentSection">
+                <h3>Comments</h3>
+                <form id="commentForm">
+                    <textarea id="commentContent" placeholder="Write a comment..." required></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+                <div id="commentList"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

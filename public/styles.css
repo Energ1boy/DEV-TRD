@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+#app {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #444;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #7fb3d5;
+    box-shadow: 0 0 5px rgba(127, 179, 213, 0.5);
+}
+
+button {
+    background-color: #7fb3d5;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #6fa3c5;
+}
+
+#auth, #newPost, #editPost, #postDetail, #posts {
+    margin-top: 20px;
+}
+
+.post, .comment {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #e8f0fe;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post button, .comment button {
+    background-color: #f7cac9;
+    border: none;
+    color: #444;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.post button:hover, .comment button:hover {
+    background-color: #f4a6a4;
+}
+
+h3 a {
+    color: #7fb3d5;
+    text-decoration: none;
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
+
+#commentSection {
+    margin-top: 20px;
+}
+
+#commentList {
+    margin-top: 10px;
+}
